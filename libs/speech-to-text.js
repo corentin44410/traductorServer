@@ -4,7 +4,7 @@ const fs = require('fs');
 const async = require('async');
 
 // Creates a client
-const apikey = { projectId : 'formation-228614',	keyFilename : './key.json'};
+const apikey = { projectId : 'formation-228614',	keyFilename : '../key.json'};
 const client = new speech.SpeechClient (apikey);
 
 /**
@@ -13,11 +13,10 @@ const client = new speech.SpeechClient (apikey);
  * @param  {object} config
  * @return transcription
  */
-function transcribe(audio, config)
-{
+function transcribe(audio, config){
     // Verify config
-    config = config || {};
-    config.audioChannelCount = config.audioChannelCount || 1;
+  config = config || {};
+  config.audioChannelCount = config.audioChannelCount || 1;
 	config.enableAutomaticPunctuation = config.enableAutomaticPunctuation || true;
 	config.enableSeparateRecognitionPerChannel = config.enableSeparateRecognitionPerChannel || true;
 	config.enableWordConfidence = config.enableWordConfidence || true;
@@ -47,8 +46,7 @@ function transcribe(audio, config)
  * @param  {object} config
  * @return transcription
  */
-function transcribeShortFile(fileName, config)
-{
+function transcribeShortFile(fileName, config){
     // Reads a local audio file and converts it to base64
     const file = fs.readFileSync(fileName);
     const audioBytes = file.toString('base64');
@@ -57,6 +55,7 @@ function transcribeShortFile(fileName, config)
     const audio = { content: audioBytes };
     return transcribe(audio, config);
 }
+
 
 /**
  * transcribe a long audio file (> 1 min)

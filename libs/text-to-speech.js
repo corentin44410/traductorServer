@@ -6,7 +6,7 @@ const async = require('async');
 const textToSpeech = require('@google-cloud/text-to-speech').v1beta1;
 
 // Creates a client
-const apikey = { projectId : 'formation-228614',	keyFilename : './key.json'};
+const apikey = { projectId : 'formation-228614',	keyFilename : '../key.json'};
 const client = new textToSpeech.TextToSpeechClient (apikey);
 
 /**
