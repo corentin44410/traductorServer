@@ -1,4 +1,5 @@
-//to start -> npm run start
+//to start -> npm run start || node server.js
+//tuto -> https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm
 var express = require('express');
 var app = express();
 var fs = require("fs");
