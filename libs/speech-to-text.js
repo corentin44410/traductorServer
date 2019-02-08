@@ -4,7 +4,7 @@ const fs = require('fs');
 const async = require('async');
 
 // Creates a client
-const apikey = { projectId : 'formation-228614',	keyFilename : '../key.json'};
+const apikey = { projectId : 'formation-228614',	keyFilename : './key.json'};
 const client = new speech.SpeechClient (apikey);
 
 /**

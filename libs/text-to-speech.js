@@ -6,7 +6,7 @@ const async = require('async');
 const textToSpeech = require('@google-cloud/text-to-speech').v1beta1;
 
 // Creates a client
-const apikey = { projectId : 'formation-228614',	keyFilename : '../key.json'};
+const apikey = { projectId : 'formation-228614',	keyFilename : './key.json'};
 const client = new textToSpeech.TextToSpeechClient (apikey);
 
 /**
@@ -61,7 +61,7 @@ function speakToFile (text, file, language, voice, format)
 {
     return new Promise(async function (resolve)
 	{
-	    let audio = await speak(text, voice, language, voice, format);
+	    let audio = await speak(text, language, voice, format);
         if(audio)
         {
             fs.writeFile(file, audio, (err) =>
@@ -78,6 +78,7 @@ function speakToFile (text, file, language, voice, format)
  */
 exports.speak = speak;
 exports.speakToFile = speakToFile;
+
 
 /**
  * test function

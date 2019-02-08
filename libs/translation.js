@@ -2,7 +2,7 @@
 const googleTranslate = require('@google-cloud/translate');
 
 // Creates a client
-const apikey = { projectId : 'formation-228614',	keyFilename : '../key.json'};
+const apikey = { projectId : 'formation-228614',	keyFilename : './key.json'};
 const client = new googleTranslate.Translate (apikey);
 
 /**
@@ -54,14 +54,15 @@ function detectLanguage (text)
 exports.translate = translate;
 exports.detectLanguage = detectLanguage;
 
-/**
- * test function
- * @return {void}
- */
-async function test ()
-{
-    console.log(await translate('hello my dear students..'));
-    console.log(await detectLanguage('goodmorning ladies and gentlemens..'));
-}
 
-test();
+// /**
+//  * test function
+//  * @return {void}
+//  */
+// async function test ()
+// {
+//     console.log(await translate('hello my dear students..'));
+//     console.log(await detectLanguage('goodmorning ladies and gentlemens..'));
+// }
+
+// test();
