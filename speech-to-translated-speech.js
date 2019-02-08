@@ -14,4 +14,6 @@ async function vocalTranslator(langage){
     let resultat = await tts.speakToFile(translated, './audio/tts.wav','',#addtheanguaghere);
 }
 
+exports.vocalTranslator = vocalTranslator;
+
 //test()
