@@ -1,16 +1,13 @@
 {
-  "Deutsch (Deutschland)": "de-DE",
-  "English (Great Britain)": "en-GB",
-  "English (United States)": "en-US",
-  "Español (España)": "es-ES",
-  "Français (France)": "fr-FR",
-  "Italiano (Italia)": "it-IT",
-  "Nederlands (Nederland)": "nl-NL",
-  "Português (Portugal)": "pt-PT",
-  "Română (România)": "ro-RO",
-  "Slovenčina (Slovensko)": "sk-SK",
-  "Русский (Россия)": "ru-RU",
-  "한국어 (대한민국)": "ko-KR",
-  "國語 (台灣)": "zh-TW",
-  "日本語（日本)": "ja-JP"
+  "Language": ["language","Women Voice","Men Voice"],
+  "Deutsch (Deutschland)": ["de","de-DE-Wavenet-A","de-DE-Wavenet-B"],
+  "English (Great Britain)": ["en","en-GB-Wavenet-A","en-GB-Wavenet-B"],
+  "English (United States)": ["en","en-GB-Wavenet-A","en-GB-Wavenet-B"],
+  "Español (España)": ["es","es-ES-Standard-A"],
+  "Français (France)": ["fr","fr-FR-Wavenet-A","fr-FR-Wavenet-B"],
+  "Italiano (Italia)": ["it","it-IT-Wavenet-A"],
+  "Nederlands (Nederland)": ["nl","nl-NL-Wavenet-A"],
+  "Português (Portugal)": ["pt","pt-BR-Standard-A"],
+  "한국어 (대한민국)(Korean)": ["ko","ko-KR-Wavenet-A"],
+  "日本語（日本)(Japanese)": ["ja","ja-JP-Wavenet-A"]
 }
