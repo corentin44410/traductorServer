@@ -30,7 +30,7 @@ function speak(text, language, voice, format)
             {
                 input       : { ssml            : '<speak>'+text+'</speak>'},
                 voice       : { languageCode    : language || 'fr-FR',
-                                name            : voice.name ||  'fr-FR-Standard-C' },
+                                name            : voice.name ||  'de-DE-Wavenet-A' },
                 audioConfig : { audioEncoding   : format.encoding || 'LINEAR16',
                                 sampleRateHertz : format.sampleRate || 16000,
                                 effectsProfileId: [ "telephony-class-application" ],
